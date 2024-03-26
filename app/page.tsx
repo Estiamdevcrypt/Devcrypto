@@ -3,6 +3,7 @@ import Link from "next/link";
 import Particles from "./components/particles";
 import { Card } from "./components/card";
 
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
@@ -17,16 +18,30 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 
       {/* Carte */}
-      <div className="my-16 text-center animate-fade-in">
-        <Link href="/contact">
-          <div className="relative">
-            <Card>
-              <div className="p-4 bg-transparentrounded-md shadow-md">
-                <h2 className="text-lg font-semibold text-white">L'équipe</h2>
+      <div className="my-16 text-center animate-fade-in" id="boxes">
+        <div className="flex justify-center">  <div id="column1">
+            <Link href="/contact">
+              <div className="relative">
+                <Card>
+                  <div className="p-4 bg-transparent rounded-md shadow-md">
+                    <h2 className="text-lg font-semibold text-white">L'équipe</h2>
+                  </div>
+                </Card>
               </div>
-            </Card>
+            </Link>
           </div>
-        </Link>
+          <div id="column2">
+            <Link href="/crypto">
+              <div className="relative">
+                <Card>
+                  <div className="p-4 bg-transparent rounded-md shadow-md">
+                    <h2 className="text-lg font-semibold text-white">Cryptocurrencies</h2>
+                  </div>
+                </Card>
+              </div>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
