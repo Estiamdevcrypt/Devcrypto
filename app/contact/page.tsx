@@ -7,25 +7,25 @@ import { Card } from "../components/card";
 const socials = [
 	{
 		icon: <Linkedin size={20} />,
-		href: "https://twitter.com/chronark_",
+		href: "https://www.linkedin.com/in/jean-loick-quashie-02b09b139/",
 		label: "Linkedin",
 		handle: "Jean-Loïck QUASHIE",
 	},
 	{
 		icon: <Linkedin size={20} />,
-		href: "https://twitter.com/chronark_",
+		href: "",
 		label: "Linkedin",
 		handle: "Michael RAZAFIMANDIMBY",
 	},
 	{
 		icon: <Linkedin size={20} />,
-		href: "https://twitter.com/chronark_",
+		href: "https://www.linkedin.com/in/adrien-wargnier-781899198/",
 		label: "Linkedin",
 		handle: "Adrien WARGNIER",
 	},
 	{
 		icon: <Linkedin size={20} />,
-		href: "https://twitter.com/chronark_",
+		href: "https://www.linkedin.com/in/nolan-nabeth-9b728220b/",
 		label: "Linkedin",
 		handle: "Nolan NABETH",
 	},
