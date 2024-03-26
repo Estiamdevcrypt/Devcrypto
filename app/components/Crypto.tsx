@@ -20,7 +20,7 @@ interface Props {
 }
 
 function Crypto({ crypto }: Props) {
-  const colorClassName = crypto.prevPrice ?  crypto.price > crypto.prevPrice ? "text-green" :  "text-red" : "text-white";
+  const colorClassName = crypto.prevPrice ?  crypto.price > crypto.prevPrice ? "text-green-500" :  "text-red-500" : "text-white";
   return (
     <div className="max-w p-6 bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 border border-gray-100 rounded-lg shadow-lg">
       <img className="w-10 h-10 mb-2 rounded-full" src={`https://s2.coinmarketcap.com/static/img/coins/128x128/${crypto.iconCode}.png`}/>
